@@ -21,6 +21,20 @@ class Grupo(models.Model):
         ('KAS1', 'Kaskondoak 1'),
     ]
 
+    nombre = models.CharField(
+        choices=NOMBRE_GRUPOS,
+        default='Z2',
+        max_length=100)
+
+    # Constraints
+    er = models.ForeignKey(
+        ER, 
+        on_delete=models.CASCADE, 
+        default='Kaskondoak')
+    
+    def __str__(self):
+        return self.nombre
+
 class Trimestre(models.Model):
     TRIMESTRES = [
         (1, 'Primero'),
@@ -32,7 +46,10 @@ class Trimestre(models.Model):
     texto = models.TextField()
 
     # Constraints
-    ER = models.ForeignKey(ER, on_delete=models.CASCADE)
+    grupo = models.ForeignKey(
+        Grupo, 
+        on_delete=models.CASCADE,
+        default='Kaskondoak 1')
 
     def __str__(self):
         return self.texto
@@ -40,6 +57,7 @@ class Trimestre(models.Model):
 
 class Campamento(models.Model):
     NOMBRES_CAMPAMENTO = [
+        ('PA', 'Paso'),
         ('NA', 'Navidad'),
         ('SS', 'Semana Santa'),
         ('VE', 'Verano'),
@@ -47,24 +65,28 @@ class Campamento(models.Model):
     ]
     nombre = models.CharField(
         choices=NOMBRES_CAMPAMENTO,
-        default='NA'
+        default='NA',
+        max_length=2
     )
 
     # Constraints
-    trimestre = models.ForeignKey(Trimestre, on_delete=models.CASCADE)
+    trimestre = models.ForeignKey(
+        Trimestre, 
+        on_delete=models.CASCADE,
+        default='Primero')
 
     def __str__(self):
         return self.nombre
 
 
-class Contenido(models.Model):
-    texto = models.TextField()
+# class Contenido(models.Model):
+#     texto = models.TextField()
 
-    # Constraints
-    trimestre = models.ForeignKey(Trimestre, on_delete=models.CASCADE)
+#     # Constraints
+#     trimestre = models.ForeignKey(Trimestre, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.texto
+#     def __str__(self):
+#         return self.texto
 
 
 class Monte(models.Model):
@@ -73,7 +95,10 @@ class Monte(models.Model):
     foto = models.ImageField()
 
     # Constraints
-    trimestre = models.ForeignKey(Trimestre, on_delete=models.CASCADE)
+    trimestre = models.ForeignKey(
+        Trimestre, 
+        on_delete=models.CASCADE,
+        default='Primero')
 
     def __str__(self):
         return self.nombre
@@ -85,18 +110,24 @@ class Taller(models.Model):
     foto = models.ImageField()
 
     # Constraints
-    trimestre = models.ForeignKey(Trimestre, on_delete=models.CASCADE)
+    grupo = models.ForeignKey(
+        Grupo, 
+        on_delete=models.CASCADE,
+        default='Kaskondoak 1')
 
     def __str__(self):
         return self.nombre
 
 
-class Reunión(models.Model):
+class Reunion(models.Model):
     nombre = models.CharField(max_length=100)
     texto = models.TextField()
 
     # Constraints
-    trimestre = models.ForeignKey(Trimestre, on_delete=models.CASCADE)
+    trimestre = models.ForeignKey(
+        Trimestre, 
+        on_delete=models.CASCADE,
+        default='Primero')
 
     def __str__(self):
         return self.nombre
@@ -107,7 +138,10 @@ class Simbolo(models.Model):
     foto = models.ImageField()
 
     # Constraints
-    ER = models.ForeignKey(ER, on_delete=models.CASCADE)
+    grupo = models.ForeignKey(
+        Grupo, 
+        on_delete=models.CASCADE,
+        default='Kaskondoak 1')
 
     def __str__(self):
         return self.nombre
@@ -117,7 +151,10 @@ class Paso(models.Model):
     texto = models.TextField()
 
     # Constraints
-    ER = models.ForeignKey(ER, on_delete=models.CASCADE)
+    grupo = models.ForeignKey(
+        Grupo, 
+        on_delete=models.CASCADE,
+        default='Kaskondoak 1')
 
     def __str__(self):
         return self.texto

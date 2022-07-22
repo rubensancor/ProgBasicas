@@ -1,9 +1,0 @@
-- model: documentation.ER
-  pk: 1
-  fields:
-    nombre: Kaskondoak
-- model: documentation.Grupo
-  pk: 1
-  fields:
-    nombre: Kaskondoak 1
-- model: 
