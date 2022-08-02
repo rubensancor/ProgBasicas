@@ -1,20 +1,22 @@
 from django.db import models
 
 
-class ER(models.Model):
+class Er(models.Model):
     NOMBRE_ERS = [
         ('Z', 'Zidor'),
         ('KOS', 'Koskorrak'),
         ('KAS', 'Kaskondoak'),
     ]
-    nombre = models.CharField(max_length=100)
+    nombre = models.CharField(
+        choices=NOMBRE_ERS,
+        max_length=100)
 
     def __str__(self):
         return self.nombre
 
 
-class Grupo(models.Model):
-    NOMBRE_GRUPOS = [
+class Rama(models.Model):
+    NOMBRE_RAMAS = [
         ('Z2', 'Zidor 2'),
         ('Z3', 'Zidor 3'),
         ('KOS', 'Koskorrak'),
@@ -22,42 +24,64 @@ class Grupo(models.Model):
     ]
 
     nombre = models.CharField(
-        choices=NOMBRE_GRUPOS,
+        choices=NOMBRE_RAMAS,
         default='Z2',
         max_length=100)
 
+    descripcion = models.TextField(
+        null=True,
+        blank=True)
+
+
     # Constraints
     er = models.ForeignKey(
-        ER, 
-        on_delete=models.CASCADE, 
-        default='Kaskondoak')
-    
+        Er, 
+        on_delete=models.CASCADE,
+        default='KAS')
+
     def __str__(self):
         return self.nombre
 
-class Trimestre(models.Model):
-    TRIMESTRES = [
-        (1, 'Primero'),
-        (2, 'Segundo'),
-        (3, 'Tercero')
-    ]
-    numero = models.IntegerField(choices=TRIMESTRES,
-                                 default=1)
-    texto = models.TextField()
+
+class Paso(models.Model):
+    descripcion = models.TextField()
 
     # Constraints
-    grupo = models.ForeignKey(
-        Grupo, 
+    rama = models.OneToOneField(
+        Rama,
         on_delete=models.CASCADE,
         default='Kaskondoak 1')
 
     def __str__(self):
-        return self.texto
+        return self.descripcion
+
+
+class Trimestre(models.Model):
+    TRIMESTRES = [
+        (1, 'Primer'),
+        (2, 'Segundo'),
+        (3, 'Tercer')
+    ]
+    numero = models.IntegerField(choices=TRIMESTRES,
+                                 default=1)
+    descripcion = models.TextField(
+        default="",
+        null=True,
+        blank=True
+    )
+
+    # Constraints
+    rama = models.ForeignKey(
+        Rama, 
+        on_delete=models.CASCADE,
+        default='KAS1')
+
+    def __str__(self):
+        return '%s trimestre de %s' %  (self.get_numero_display(), self.rama)
 
 
 class Campamento(models.Model):
     NOMBRES_CAMPAMENTO = [
-        ('PA', 'Paso'),
         ('NA', 'Navidad'),
         ('SS', 'Semana Santa'),
         ('VE', 'Verano'),
@@ -73,32 +97,23 @@ class Campamento(models.Model):
     trimestre = models.ForeignKey(
         Trimestre, 
         on_delete=models.CASCADE,
-        default='Primero')
+        default=1)
 
     def __str__(self):
         return self.nombre
 
 
-# class Contenido(models.Model):
-#     texto = models.TextField()
-
-#     # Constraints
-#     trimestre = models.ForeignKey(Trimestre, on_delete=models.CASCADE)
-
-#     def __str__(self):
-#         return self.texto
-
-
 class Monte(models.Model):
     nombre = models.CharField(max_length=100)
     link = models.URLField()
+    descripcion = models.TextField(null=True)
     foto = models.ImageField()
 
     # Constraints
-    trimestre = models.ForeignKey(
-        Trimestre, 
+    rama = models.ForeignKey(
+        Rama, 
         on_delete=models.CASCADE,
-        default='Primero')
+        default='Kaskondoak 1')
 
     def __str__(self):
         return self.nombre
@@ -107,11 +122,12 @@ class Monte(models.Model):
 class Taller(models.Model):
     nombre = models.CharField(max_length=100)
     link = models.URLField()
+    descripcion = models.TextField(null=True)
     foto = models.ImageField()
 
     # Constraints
-    grupo = models.ForeignKey(
-        Grupo, 
+    rama = models.ForeignKey(
+        Rama, 
         on_delete=models.CASCADE,
         default='Kaskondoak 1')
 
@@ -121,13 +137,13 @@ class Taller(models.Model):
 
 class Reunion(models.Model):
     nombre = models.CharField(max_length=100)
-    texto = models.TextField()
+    descripcion = models.TextField(null=True)
 
     # Constraints
     trimestre = models.ForeignKey(
         Trimestre, 
         on_delete=models.CASCADE,
-        default='Primero')
+        default=1)
 
     def __str__(self):
         return self.nombre
@@ -135,26 +151,72 @@ class Reunion(models.Model):
 
 class Simbolo(models.Model):
     nombre = models.CharField(max_length=100)
+    descripcion = models.TextField(null=True)
     foto = models.ImageField()
 
     # Constraints
-    grupo = models.ForeignKey(
-        Grupo, 
+    rama = models.ForeignKey(
+        Rama,
+        on_delete=models.CASCADE,
+        default='KAS1')
+
+    def __str__(self):
+        return self.nombre
+
+
+class Recurso(models.Model):
+    nombre = models.CharField(max_length=100)
+    link = models.URLField()
+    descripcion = models.TextField(null=True)
+    foto = models.ImageField()
+
+    # Constraints
+    rama = models.ForeignKey(
+        Rama, 
         on_delete=models.CASCADE,
         default='Kaskondoak 1')
 
     def __str__(self):
         return self.nombre
 
-
-class Paso(models.Model):
-    texto = models.TextField()
+class Contenido(models.Model):
+    nombre = models.CharField(max_length=100)
+    link = models.URLField(
+        null=True,
+        blank=True)
+    descripcion = models.TextField(
+        null=True,
+        blank=True)
+    foto = models.ImageField(
+        null=True,
+        blank=True
+    )
 
     # Constraints
-    grupo = models.ForeignKey(
-        Grupo, 
+    trimestre = models.ForeignKey(
+        Trimestre, 
         on_delete=models.CASCADE,
-        default='Kaskondoak 1')
+        null=True,
+        blank=True)
+
+    rama = models.ForeignKey(
+        Rama, 
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True)
+
+    paso = models.ForeignKey(
+        Paso,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True)
+
+    campamento = models.ForeignKey(
+        Campamento, 
+        on_delete=models.CASCADE, 
+        null=True,
+        blank=True)
+    
 
     def __str__(self):
-        return self.texto
+        return self.nombre
