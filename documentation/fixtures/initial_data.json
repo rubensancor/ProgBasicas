@@ -1,0 +1,455 @@
+[
+  {
+    "model": "documentation.Er",
+    "fields": {
+      "nombre": "Z"
+    }
+  },
+  {
+    "model": "documentation.Er",
+    "fields": {
+      "nombre": "KOS"
+    }
+  },
+  {
+    "model": "documentation.Er",
+    "fields": {
+      "nombre": "KAS"
+    }
+  },
+  {
+    "model": "documentation.Er",
+    "fields": {
+      "nombre": "OIN"
+    }
+  },
+  {
+    "model": "documentation.Er",
+    "fields": {
+      "nombre": "AZK"
+    }
+  },
+  {
+    "model": "documentation.Er",
+    "fields": {
+      "nombre": "BID"
+    }
+  },
+  {
+    "model": "documentation.Er",
+    "fields": {
+      "nombre": "AIN"
+    }
+  },
+  {
+    "model": "documentation.Er",
+    "fields": {
+      "nombre": "CATE"
+    }
+  },
+
+
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "Z2",
+      "descripcion": "Prueba zidor 2",
+      "er": "Z"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "Z3",
+      "descripcion": "Prueba zidor 3",
+      "er": "Z"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "KOS",
+      "descripcion": "Prueba Koskorrak",
+      "er": "KOS"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "KAS1",
+      "descripcion": "Prueba Kaskondoak 1",
+      "er": "KAS"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "KAS2",
+      "descripcion": "Prueba Kaskondoak 2",
+      "er": "KAS"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "OIN1",
+      "descripcion": "Prueba Oinarinak 1",
+      "er": "OIN"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "OIN2",
+      "descripcion": "Prueba Oinarinak 2",
+      "er": "OIN"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "AZK1",
+      "descripcion": "Prueba Azkarrak 1",
+      "er": "AZK"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "AZK2",
+      "descripcion": "Prueba Azkarrak 2",
+      "er": "AZK"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "BID1",
+      "descripcion": "Prueba Bidean 1",
+      "er": "BID"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "BID2",
+      "descripcion": "Prueba Bidean 2",
+      "er": "BID"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "AIN",
+      "descripcion": "Prueba Aingura",
+      "er": "AIN"
+    }
+  },
+  {
+    "model": "documentation.Rama",
+    "fields": {
+      "nombre": "CATE",
+      "descripcion": "Prueba Cate",
+      "er": "CATE"
+    }
+  },
+
+
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre Zidor 2",
+      "rama": "Z2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre Zidor 2",
+      "rama": "Z2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre Zidor 2",
+      "rama": "Z2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre Zidor 3",
+      "rama": "Z3"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre Zidor 3",
+      "rama": "Z3"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre Zidor 3",
+      "rama": "Z3"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre Koskorrak",
+      "rama": "KOS"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre Koskorrak",
+      "rama": "KOS"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre Koskorrak",
+      "rama": "KOS"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre Kaskondoak 1",
+      "rama": "KAS1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre Kaskondoak 1",
+      "rama": "KAS1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre Kaskondoak 1",
+      "rama": "KAS1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre KAS2",
+      "rama": "KAS2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre KAS2",
+      "rama": "KAS2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre KAS2",
+      "rama": "KAS2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre OIN1",
+      "rama": "OIN1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre OIN1",
+      "rama": "OIN1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre OIN1",
+      "rama": "OIN1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre OIN2",
+      "rama": "OIN2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre OIN2",
+      "rama": "OIN2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre OIN2",
+      "rama": "OIN2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre AZK1",
+      "rama": "AZK1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre AZK1",
+      "rama": "AZK1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre AZK1",
+      "rama": "AZK1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre AZK2",
+      "rama": "AZK2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre AZK2",
+      "rama": "AZK2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre AZK2",
+      "rama": "AZK2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre BID1",
+      "rama": "BID1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre BID1",
+      "rama": "BID1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre BID1",
+      "rama": "BID1"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre BID2",
+      "rama": "BID2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre BID2",
+      "rama": "BID2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre BID2",
+      "rama": "BID2"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 1,
+      "descripcion": "Primer trimestre AIN",
+      "rama": "AIN"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 2,
+      "descripcion": "Segundo trimestre AIN",
+      "rama": "AIN"
+    }
+  },
+  {
+    "model": "documentation.Trimestre",
+    "fields": {
+      "numero": 3,
+      "descripcion": "Tercer trimestre AIN",
+      "rama": "AIN"
+    }
+  },
+
+  
+  {
+    "model": "documentation.Campamento",
+    "fields": {
+      "nombre": "VE",
+      "trimestre": [3, "Z3"]
+    }
+  }
+]

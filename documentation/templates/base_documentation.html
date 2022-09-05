@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es"> 
 {% load static %}
+{% load markdownify %}
 <head>
-    <title>{{rama_nombre}}</title>
-    
+   
+    <title> {% block title %} Título {% endblock %}</title>
+
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +30,7 @@
 
 </head> 
 
+
 <body class="docs-page">    
     <header class="header fixed-top">	    
         <div class="branding docs-branding">
@@ -41,19 +44,6 @@
 	                <div class="site-logo"><a class="navbar-brand" href="{% url 'home' %}"><img class="logo-icon me-2" src="{% static 'images/coderdocs-logo.svg' %}" alt="logo"><span class="logo-text">Prog<span class="text-alt">Básicas</span></span></a></div>    
                 </div><!--//docs-logo-wrapper-->
 	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <!-- <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div> -->
-	
-					<!-- <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-		            </ul>//social-list -->
 					<button class="btn btn-primary dropstart d-none d-lg-flex" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						{{ rama_nombre }}
 					  </button>
@@ -70,8 +60,8 @@
             </div><!--//container-->
         </div><!--//branding-->
     </header><!--//header-->
-    
-    
+
+
     <div class="docs-wrapper">
 	    <div id="docs-sidebar" class="docs-sidebar">
 		    <div class="top-search-box d-lg-none p-3">
@@ -83,18 +73,20 @@
 			<!-- Deshacer la chapuza del cycle... Posible workaround: https://stackoverflow.com/questions/29526291/unpack-a-list-to-cycle-tag-in-django -->
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
-				    <li class="nav-item section-title"><a class="nav-link scrollto" href="#section-{% cycle 1 2 3 4 5 6 7 8 9 10 as trimestresectioncycle %}"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>{{rama_nombre}}</a></li>
+					{% for section in sections %}
+					<li class="nav-item section-title"><a class="nav-link scrollto" href="#section-{% cycle 1 2 3 4 5 6 7 8 9 10 as trimestresectioncycle %}"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>{{section}}</a></li>
+					{% endfor %}
+				    <!-- <li class="nav-item section-title"><a class="nav-link scrollto" href="#section-{% cycle 1 2 3 4 5 6 7 8 9 10 as trimestresectioncycle %}"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>{{rama_nombre}}</a></li> -->
 				    	<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Section Item 1.1</a></li> -->
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-{% cycle trimestresectioncycle %}"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Paso</a></li>
+				    <!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-{% cycle trimestresectioncycle %}"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Paso</a></li>
 				    	<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Section Item 2.1</a></li>
 					{% for trimestre in trimestres.all %}
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-{% cycle trimestresectioncycle %}"><span class="theme-icon-holder me-2"><i class="fas fa-{% cycle 1 2 3 as trimestrecycler	 %}"></i></span>{{trimestre.get_numero_display}} trimestre</a></li>
-						<!-- Cargar reuniones -->
 						{% for reunion in reuniones.all%}
 							{% if reunion.trimestre == trimestre  %}
 								<li class="nav-item"><a class="nav-link scrollto" href="#item-{{ trimestresectioncycle }}-{% cycle 1 2 3 4 as intcycler %}">{{reunion.nombre}}</a></li>
 							{% endif %}		
-						{% endfor %}
+						{% endfor %} -->
 
 						<!-- Cargar contenidos -->
 						<!-- {% for contenido in contenidos.all%}
@@ -104,7 +96,7 @@
 						{% endfor %} -->
 
 						<!-- Cargar campamentos -->
-						{% for campamento in campamentos.all %}
+						<!-- {% for campamento in campamentos.all %}
 							{% if campamento.trimestre == trimestre  %}
 								<li class="nav-item"><a class="nav-link scrollto" href="#item-{{ trimestresectioncycle }}-{% cycle intcycler %}">Campamento de {{campamento.get_nombre_display}}</a></li>
 							{% endif %}
@@ -128,68 +120,97 @@
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-{% cycle trimestresectioncycle %}"><span class="theme-icon-holder me-2"><i class="fas fa-icons"></i></span>Recursos</a></li>
 				    {% for recurso in recursos.all %}
 						<li class="nav-item"><a class="nav-link scrollto" href="#item-{{ trimestresectioncycle }}-1">{{ recurso.nombre }}</a></li>
-					{% endfor %}
+					{% endfor %} -->
 				    
 					
 			    </ul>
 
 		    </nav><!--//docs-nav-->
 	    </div><!--//docs-sidebar-->
-	    
-		<div class="docs-content">
+
+        <div class="docs-content">
 		    <div class="container">
 
 				<!-- Primera sección del grupo -->
-
-
-				<article class="docs-article" id="section-{% cycle 1 2 3 4 5 6 7 8 9 10 as trimestresectioncycle %}">
+                
+                <article class="docs-article" id="section-1">
 					<header class="docs-header">
 						<h1 class="docs-heading">{{rama_nombre}} <span class="docs-time">Last updated: 2019-06-01</span></h1>
 						<section class="docs-intro">
-							<!-- <p>{{rama_descripcion}}</p> -->
+							{% block descripcionRama %} Descripcion de la rama {% endblock %}
 						</section><!--//docs-intro-->
-						{% for contenido in contenidos_rama.all %}
-							<h3>{{ contenido.nombre }}</h3>
-							<p>{{ contenido.descripcion }}</a></p>
-						{% endfor %}	
+                        <section class="docs-section">
+                            {{ Intro | markdownify}}
+                        </section>
 					</header>
 				</article>
+                
+				
 							    
 				<!-- PASO -->
-			    <article class="docs-article" id="section-{% cycle trimestresectioncycle %}">
+			    <article class="docs-article" id="section-2">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Paso</h1>
 					    <section class="docs-intro">
 						    <p>{{paso.descripcion}}</p>
 						</section><!--//docs-intro-->
 				    </header>
+                    <section class="docs-section">
+                        {{ Paso | markdownify}}
+                    </section>
 
 					<!-- TODO: Implementar los contenidos del paso -->
-				     <section class="docs-section" id="item-2-1">
+				     <!-- <section class="docs-section" id="item-2-1">
 						<h2 class="section-heading">Section Item 2.1</h2>
 						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					
+					</section> -->
 			    </article><!--//docs-article-->
 			    
 			    <!-- TRIMESTRES -->
-				{% for trimestre in trimestres.all %}
-			    <article class="docs-article" id="section-{% cycle trimestresectioncycle %}">
+				<!-- 1 Trim -->
+			    <article class="docs-article" id="section-3">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">{{trimestre.get_numero_display}} trimestre</h1>
+					    <h1 class="docs-heading">Primer trimestre</h1>
+				    </header>
+                    <section class="docs-section">
+                        {{ PrimerTrim | markdownify}}
+                    </section>
+					<section class="docs-section">
+                        {{ CampaNavidad | markdownify}}
+                    </section>
+			    </article><!--//docs-article-->
+
+				<!-- 2 Trim -->
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Segundo trimestre</h1>
 					    <section class="docs-intro">
 						    <p>{{trimestre.descripcion}}</p>
 						</section><!--//docs-intro-->
 				    </header>
-					{% for contenido in contenidos_trimestre.all %}
-						{% if contenido.trimestre == trimestre%}
-						<h3>{{ contenido.nombre }}</h3>
-						<p>{{ contenido.descripcion }}</a></p>
-						{% endif %}
-					{% endfor %}
+                    <section class="docs-section">
+                        {{ SegundoTrim | markdownify}}
+                    </section>
+					<section class="docs-section">
+                        {{ CampaSS | markdownify}}
+                    </section>
 			    </article><!--//docs-article-->
-			    {% endfor %}
+
+				<!-- 1 Trim -->
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Tercer trimestre</h1>
+					    <section class="docs-intro">
+						    <p>{{trimestre.descripcion}}</p>
+						</section><!--//docs-intro-->
+				    </header>
+                    <section class="docs-section">
+                        {{ TercerTrim | markdownify}}
+                    </section>
+					<section class="docs-section">
+                        {{ CampaVerano | markdownify}}
+                    </section>
+			    </article><!--//docs-article-->
 
 				<!-- MONTES -->
 			    <article class="docs-article" id="section-{% cycle trimestresectioncycle %}">
