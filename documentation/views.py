@@ -62,23 +62,46 @@ def rama_documentation(request, rama_name):
         'contenidos_trimestre': contenidos_trimestre,
         }
     context.update(markdowntext)
+    print(context)
     return render(
         request, 
-        'documentation/'+str(rama)+'.html',  
+        'documentation/documentation.html',
         context)
 
 def get_markdown_data(rama_name):
-    sections = []
     context = {}
+    num = 1
+    sidebar_sections = {}
+    sections_text = {}
+
     path = os.path.join(STATICFILES_DIRS[0], 'md/'+rama_name)
+    
     for filename in os.listdir(path):
+        sections_text[num] = {}
+        sidebar_sections[num] = {}
+
+        # Handle comments
         with open(os.path.join(path, filename), 'r') as f:
             for line in f.readlines():
-                if '[comment]' in line:
-                    sections.append(re.search('\((.*)\)', line).group(1))
+                if '[nombre]' in line:
+                    print(line)
+                    sections_text[num]['name'] = (re.search('\((.*)\)', line).group(1))
+                elif '[sidebar]' in line:
+                    sidebar_sections[num]['sidebar'] = (re.search('\((.*)\)', line).group(1))
+                elif '[icon]' in line:
+                    sidebar_sections[num]['icon'] = (re.search('\((.*)\)', line).group(1))
+                elif '[exit]' in line:
                     break
+                    
+        # Dictionary for the contents
         with open(os.path.join(path, filename), 'r') as f:
-            context[str(filename.split('-')[1].split('.md')[0])] = f.read()
-            context['sections'] = sections
+            sections_text[num]['filename'] = str(filename.split('-')[1].split('.md')[0])
+            sections_text[num]['text'] = f.read()
+
+        print(sidebar_sections)
+        num += 1   
+
+        context['sections_text'] = sections_text
+        context['sidebar_sections'] = sidebar_sections
     return context
     

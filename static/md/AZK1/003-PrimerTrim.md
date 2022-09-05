@@ -1,5 +1,7 @@
-[comment]: <> (Primer Trimestre)
-[comment-icon]: <> (Azkarrak 1)
+[nombre]: <> (Primer Trimestre)
+[sidebar]: <> (1º Trimestre)
+[icon]: <> (fa-1)
+[exit]: <> (exit)
 
 ### A lo largo de todo el trimestre:
 Llevar a cabo una empresa relacionada con San José de Calasanz, presentando una actividad final (obra de teatro, musical, cómic interactivo, pasaje por el colegio, etc.) durante la semana de fiestas del colegio (finales de noviembre). Destacar en el teatro la figura de Calasanz. Unir esta actividad con la campaña de Navidad.
