@@ -53,6 +53,12 @@ class Rama(models.Model):
         null=True,
         blank=True)
 
+    icon = models.CharField(
+        max_length=100,
+        null=True,
+        blank=True)
+
+
 
     # Constraints
     er = models.ForeignKey(

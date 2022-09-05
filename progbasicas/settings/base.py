@@ -15,7 +15,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 
 load_dotenv()
 
@@ -24,11 +24,6 @@ load_dotenv()
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -129,9 +124,12 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MARKDOWNIFY_STRIP = False
-MARKDOWNIFY_WHITELIST_TAGS = {
- 'a', 'p', 'strong', 'em',
- 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7',
- 'ul', 'li', 'span',
+# Markdownify
+
+MARKDOWNIFY = {
+  "default": {
+     "WHITELIST_TAGS": ['a', 'p', 'strong', 'em',
+                        'h1', 'h2', 'h3', 'h4', 'h5',
+                        'h6', 'h7', 'ul', 'li', 'span']
+  }
 }

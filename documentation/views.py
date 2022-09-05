@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from django.template import loader
 from markdown import markdown
 
-from progbasicas.settings import STATICFILES_DIRS
+from progbasicas.settings.base import BASE_DIR
 
 from .models import *
 
@@ -74,7 +74,7 @@ def get_markdown_data(rama_name):
     sidebar_sections = {}
     sections_text = {}
 
-    path = os.path.join(STATICFILES_DIRS[0], 'md/'+rama_name)
+    path = os.path.join(BASE_DIR, 'static/md/'+rama_name)
     
     for filename in os.listdir(path):
         sections_text[num] = {}
