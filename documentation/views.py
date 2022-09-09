@@ -76,7 +76,7 @@ def get_markdown_data(rama_name):
 
     path = os.path.join(BASE_DIR, 'static/md/'+rama_name)
     
-    for filename in os.listdir(path):
+    for filename in sorted(os.listdir(path)):
         sections_text[num] = {}
         sidebar_sections[num] = {}
 
@@ -84,7 +84,6 @@ def get_markdown_data(rama_name):
         with open(os.path.join(path, filename), 'r') as f:
             for line in f.readlines():
                 if '[nombre]' in line:
-                    print(line)
                     sections_text[num]['name'] = (re.search('\((.*)\)', line).group(1))
                 elif '[sidebar]' in line:
                     sidebar_sections[num]['sidebar'] = (re.search('\((.*)\)', line).group(1))
@@ -97,8 +96,6 @@ def get_markdown_data(rama_name):
         with open(os.path.join(path, filename), 'r') as f:
             sections_text[num]['filename'] = str(filename.split('-')[1].split('.md')[0])
             sections_text[num]['text'] = f.read()
-
-        print(sidebar_sections)
         num += 1   
 
         context['sections_text'] = sections_text

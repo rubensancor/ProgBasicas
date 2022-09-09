@@ -136,21 +136,5 @@
       "descripcion": "Prueba Bidean 2",
       "er": "BID"
     }
-  },
-  {
-    "model": "documentation.Rama",
-    "fields": {
-      "nombre": "AIN",
-      "descripcion": "Prueba Aingura",
-      "er": "AIN"
-    }
-  },
-  {
-    "model": "documentation.Rama",
-    "fields": {
-      "nombre": "CATE",
-      "descripcion": "Prueba Cate",
-      "er": "CATE"
-    }
   }
 ]

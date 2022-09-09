@@ -1,6 +1,6 @@
 [nombre]: <> (Campa Verano)
 [sidebar]: <> (Campamento de Verano)
-[icon]: <> (fa-umbrella-beach)
+[icon]: <> (fa-mountain-sun)
 [exit]: <> (exit)
 
 - **Localización:** Formigal (Corral de las Mulas) - Belagoa

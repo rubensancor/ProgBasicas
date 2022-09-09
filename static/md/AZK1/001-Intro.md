@@ -3,6 +3,22 @@
 [icon]: <> (fa-hand-fist)
 [exit]: <> (exit)
 
-- **Empresa:** actividad novedosa y central de la etapa de Azkarrak. Consiste en realizar una actividad como grupo, hacia fuera, centrada en el servicio a los demás. Salto cualitativo en comparación con el proyecto Oinarinak, actividad grupal centrada en el propio grupo. Y diferente a Bidean etapa en la que se inicia el compromiso social individual.
-- Es una etapa en la que el monitor debe estar abierto a dialogar sobre las dudas de fe, sobre crecimiento en identidad de la persona.
-- Temas de debate 15 minutos al principio de las reuniones.
+- Preparar una oración especial al trimestre.
+
+- Invitar a la eucaristía de la CCE que prepara el ER.
+
+- Cuidar el euskera en las actividades, oraciones...
+
+- Carta de compromiso (si se ve necesario).
+
+- El Proyecto como metodología (actividad trimestral elegida por ellos y centrada en el grupo).
+
+- Aprovechar las salidas y completos para realizar oraciones más cuidadas.
+
+- Realizar actividades que destaquen personas o  valores cristianos al trimestre.
+
+- Si es posible tener dos salidas al trimestre.
+
+- Cuidar el sentido del proyecto: actividad trimestral con resultado final  y un conjunto de actividades  hilvanadas  que lo relacionan.
+
+- Mantener la multiplicación de los grupos, no abusar de actividades conjuntas.
