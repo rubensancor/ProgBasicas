@@ -33,16 +33,8 @@ def rama_documentation(request, rama_name):
     try:
         ramas = Rama.objects.all()
         rama = Rama.objects.get(nombre__iexact=rama_name)
-        trimestres = Trimestre.objects.filter(rama=rama)
-        reuniones = Reunion.objects.filter(trimestre__in=trimestres)
-        campamentos = Campamento.objects.filter(trimestre__in=trimestres)
-        contenidos_rama = ContenidoRama.objects.filter(rama=rama)
-        contenidos_trimestre = ContenidoTrimestre.objects.filter(
-            trimestre__in=trimestres)
-        montes = Monte.objects.filter(rama=rama)
+        salidas = Salida.objects.filter(rama=rama)
         talleres = Taller.objects.filter(rama=rama)
-        simbolos = Simbolo.objects.filter(rama=rama)
-        recursos = Recurso.objects.filter(trimestre__in=trimestres)
         markdowntext = get_markdown_data(rama_name)
     except Rama.DoesNotExist:
         raise Http404("La rama no existe")
@@ -51,15 +43,8 @@ def rama_documentation(request, rama_name):
         'ramas': ramas,
         'rama_nombre': rama.get_nombre_display(),
         'rama_descripcion': rama.descripcion,
-        'montes': montes,
-        'trimestres': trimestres,
-        'campamentos': campamentos,
-        'reuniones': reuniones,
+        'salidas': salidas,
         'talleres': talleres,
-        'simbolos': simbolos,
-        'recursos': recursos,
-        'contenidos_rama': contenidos_rama,
-        'contenidos_trimestre': contenidos_trimestre,
         }
     context.update(markdowntext)
     print(context)

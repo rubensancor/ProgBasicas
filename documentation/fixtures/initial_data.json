@@ -53,7 +53,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "Z2",
-      "descripcion": "Prueba zidor 2",
+      "descripcion": "Pottokis y Heziki",
       "er": "Z"
     }
   },
@@ -61,7 +61,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "Z3",
-      "descripcion": "Prueba zidor 3",
+      "descripcion": "Pottokis",
       "er": "Z"
     }
   },
@@ -69,7 +69,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "KOS",
-      "descripcion": "Prueba Koskorrak",
+      "descripcion": "El libro de la selva",
       "er": "KOS"
     }
   },
@@ -77,7 +77,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "KAS1",
-      "descripcion": "Prueba Kaskondoak 1",
+      "descripcion": "Primer año de lobatos",
       "er": "KAS"
     }
   },
@@ -85,7 +85,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "KAS2",
-      "descripcion": "Prueba Kaskondoak 2",
+      "descripcion": "Promesa Kaskondoak",
       "er": "KAS"
     }
   },
@@ -93,7 +93,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "OIN1",
-      "descripcion": "Prueba Oinarinak 1",
+      "descripcion": "Proyectos",
       "er": "OIN"
     }
   },
@@ -101,7 +101,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "OIN2",
-      "descripcion": "Prueba Oinarinak 2",
+      "descripcion": "Promesa Oinarinak",
       "er": "OIN"
     }
   },
@@ -109,7 +109,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "AZK1",
-      "descripcion": "Prueba Azkarrak 1",
+      "descripcion": "Empresas",
       "er": "AZK"
     }
   },
@@ -117,7 +117,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "AZK2",
-      "descripcion": "Prueba Azkarrak 2",
+      "descripcion": "Proyecto Azkarrak",
       "er": "AZK"
     }
   },
@@ -125,7 +125,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "BID1",
-      "descripcion": "Prueba Bidean 1",
+      "descripcion": "Voluntariado",
       "er": "BID"
     }
   },
@@ -133,7 +133,7 @@
     "model": "documentation.Rama",
     "fields": {
       "nombre": "BID2",
-      "descripcion": "Prueba Bidean 2",
+      "descripcion": "Proyecto Personal",
       "er": "BID"
     }
   }
