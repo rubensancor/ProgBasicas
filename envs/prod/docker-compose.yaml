@@ -4,7 +4,7 @@ services:
   reverse-proxy:
     # The official v2 Traefik docker image
     image: traefik:v2.8
-    # Enables the web UI and tells Traefik to listen to docker
+    restart: unless-stopped
     command: 
       # Enable Docker in Traefik, so that it reads labels from Docker services
       - --providers.docker=true
@@ -37,14 +37,12 @@ services:
       - .env
     volumes:
       - ../../:/app
-    ports:
-      - "8000:8000"
     command: ["bash", "./start-prod.sh"]
     labels:
       - traefik.enable=True
-      - traefik.http.routers.web.rule=Host(`/`)
-      - traefik.http.services.web.loadbalancer.server.port=8000
       - traefik.docker.network=traefik-public
+      - traefik.http.routers.web.rule=Host(`localhost`)
+      - traefik.http.services.web.loadbalancer.server.port=8000
     networks:
       - traefik-public
 
