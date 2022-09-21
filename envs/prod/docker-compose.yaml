@@ -32,7 +32,6 @@ services:
     build: 
       context: ../../
       dockerfile: Dockerfile
-      target: prod
     container_name: web
     env_file:
       - .env
@@ -43,7 +42,7 @@ services:
     command: ["bash", "./start-prod.sh"]
     labels:
       - traefik.enable=True
-      - traefik.http.routers.reverse-proxy.rule=Host(`/`)
+      - traefik.http.routers.web.rule=Host(`/`)
       - traefik.http.services.web.loadbalancer.server.port=8000
       - traefik.docker.network=traefik-public
     networks:

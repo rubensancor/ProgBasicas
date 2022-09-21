@@ -47,7 +47,7 @@ def rama_documentation(request, rama_name):
         'talleres': talleres,
         }
     context.update(markdowntext)
-    print(context)
+    # print(context)
     return render(
         request, 
         'documentation/documentation.html',

@@ -11,6 +11,7 @@ help: ## Show this help
 .PHONY: down
 down: ## Stops all containers and removes volumes
 	docker-compose down --remove-orphans
+	docker network rm traefik-public || true
 
 #######################
 ## BUILD IMAGES
