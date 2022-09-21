@@ -5,7 +5,17 @@ services:
     # The official v2 Traefik docker image
     image: traefik:v2.8
     # Enables the web UI and tells Traefik to listen to docker
-    command: --api.insecure=true --providers.docker
+    command: 
+      # Enable Docker in Traefik, so that it reads labels from Docker services
+      - --providers.docker=true
+      # Enable the access log, with HTTP requests
+      - --accesslog
+      # Enable the Traefik log, for configurations and errors
+      - --log
+      # Enable the Dashboard and API
+      - --api
+      # Enable the Dashboard and API in insecure mode for local development
+      - --api.insecure=true
     ports:
       # The HTTP port
       - "80:80"
@@ -13,7 +23,6 @@ services:
       - "8080:8080"
     volumes:
       # So that Traefik can listen to the Docker events
-      - "$PWD/traefik.prod.toml:/etc/traefik/traefik.toml"
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - traefik-public
