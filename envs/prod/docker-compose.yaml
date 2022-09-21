@@ -15,6 +15,8 @@ services:
       # So that Traefik can listen to the Docker events
       - "$PWD/traefik.prod.toml:/etc/traefik/traefik.toml"
       - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - traefik-public
   
   web:
     image: progbasicas-web
@@ -35,6 +37,8 @@ services:
       - traefik.http.routers.reverse-proxy.rule=Host(`/`)
       - traefik.http.services.web.loadbalancer.server.port=8000
       - traefik.docker.network=traefik-public
+    networks:
+      - traefik-public
 
 networks:
   traefik-public:
