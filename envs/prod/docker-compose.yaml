@@ -1,6 +1,21 @@
 version: "3.9"
 
 services:
+  reverse-proxy:
+    # The official v2 Traefik docker image
+    image: traefik:v2.8
+    # Enables the web UI and tells Traefik to listen to docker
+    command: --api.insecure=true --providers.docker
+    ports:
+      # The HTTP port
+      - "80:80"
+      # The Web UI (enabled by --api.insecure=true)
+      - "8080:8080"
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - "$PWD/traefik.prod.toml:/etc/traefik/traefik.toml"
+      - /var/run/docker.sock:/var/run/docker.sock
+  
   web:
     image: progbasicas-web
     container_name: web
@@ -16,22 +31,6 @@ services:
       - traefik.http.routers.reverse-proxy.rule=Host(`/`)
       - traefik.http.services.web.loadbalancer.server.port=8000
       - traefik.docker.network=traefik-public
-
-
-  reverse-proxy:
-    # The official v2 Traefik docker image
-    image: traefik:v2.8
-    # Enables the web UI and tells Traefik to listen to docker
-    command: --api.insecure=true --providers.docker
-    ports:
-      # The HTTP port
-      - "80:80"
-      # The Web UI (enabled by --api.insecure=true)
-      - "8080:8080"
-    volumes:
-      # So that Traefik can listen to the Docker events
-      - "$PWD/traefik.dev.toml:/etc/traefik/traefik.toml"
-      - /var/run/docker.sock:/var/run/docker.sock
 
 networks:
   traefik-public:
