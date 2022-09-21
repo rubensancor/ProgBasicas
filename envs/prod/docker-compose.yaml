@@ -41,7 +41,7 @@ services:
     labels:
       - traefik.enable=True
       - traefik.docker.network=traefik-public
-      - traefik.http.routers.web.rule=Host(`localhost`)
+      - traefik.http.routers.web.rule=Host(`${DOMAIN}`)
       - traefik.http.services.web.loadbalancer.server.port=8000
     networks:
       - traefik-public
