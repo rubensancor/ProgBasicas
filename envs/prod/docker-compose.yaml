@@ -1,6 +1,22 @@
 version: "3.9"
 
 services:
+  web:
+    image: progbasicas-web
+    container_name: web
+    env_file:
+      - .env
+    volumes:
+      - ../../:/app
+    ports:
+      - "8000:8000"
+    command: ["bash", "./start-prod.sh"]
+    labels:
+      - traefik.enable=True
+      - traefik.http.routers.reverse-proxy.rule=Host(`/`)
+      - traefik.http.services.web.loadbalancer.server.port=8000
+      - traefik.docker.network=traefik-public
+
 
   reverse-proxy:
     # The official v2 Traefik docker image
@@ -14,26 +30,8 @@ services:
       - "8080:8080"
     volumes:
       # So that Traefik can listen to the Docker events
+      - "$PWD/traefik.dev.toml:/etc/traefik/traefik.toml"
       - /var/run/docker.sock:/var/run/docker.sock
-
-  web:
-    image: 'webdev'
-    build: 
-      context: .
-      dockerfile: Dockerfile
-      target: dev
-    container_name: web-dev
-    env_file:
-      - .env
-    volumes:
-      - .:/app
-    ports:
-      - "8000:8000"
-    labels:
-      - traefik.enable=True
-      - traefik.http.routers.reverse-proxy.rule=Host(`/`)
-      - traefik.http.services.web.loadbalancer.server.port=8000
-      - traefik.docker.network=traefik-public
 
 networks:
   traefik-public:

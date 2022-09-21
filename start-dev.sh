@@ -1,8 +1,9 @@
 #! /usr/bin/env bash
 
-python manage.py createsuperuser --no-input
-python manage.py makemigrations
-python manage.py migrate
-python manage.py loaddata initial_data.json
+python app/manage.py createsuperuser --no-input
+python app/manage.py makemigrations
+python app/manage.py migrate
+python app/manage.py loaddata initial_data.json
+python app/manage.py collectstatic
 
-python manage.py runserver 0.0.0.0:8000 --settings=progbasicas.settings.dev
+python app/manage.py runserver 0.0.0.0:8000 --settings=progbasicas.settings.dev

@@ -19,3 +19,4 @@ sqlparse==0.4.2
 tinycss2==1.1.1
 uvicorn==0.18.3
 webencodings==0.5.1
+whitenoise==6.2.0
