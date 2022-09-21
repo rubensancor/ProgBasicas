@@ -18,6 +18,10 @@ services:
   
   web:
     image: progbasicas-web
+    build: 
+      context: ../../
+      dockerfile: Dockerfile
+      target: prod
     container_name: web
     env_file:
       - .env
