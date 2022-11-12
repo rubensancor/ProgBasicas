@@ -1,5 +1,5 @@
-[nombre]: <> (Oinarinak 1)
-[sidebar]: <> (Oinarinak 1)
+[nombre]: <> (Oinarinak 2)
+[sidebar]: <> (Oinarinak 2)
 [icon]: <> (fa-hand-fist)
 [exit]: <> (exit)
 

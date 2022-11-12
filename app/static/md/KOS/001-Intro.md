@@ -1,5 +1,5 @@
-[nombre]: <> (Kaskondoak 1)
-[sidebar]: <> (Kaskondoak 1)
+[nombre]: <> (Koskorrak)
+[sidebar]: <> (Koskorrak)
 [icon]: <> (fa-hand-fist)
 [exit]: <> (exit)
 

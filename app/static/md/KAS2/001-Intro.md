@@ -1,5 +1,5 @@
-[nombre]: <> (Kaskondoak 1)
-[sidebar]: <> (Kaskondoak 1)
+[nombre]: <> (Kaskondoak 2)
+[sidebar]: <> (Kaskondoak 2)
 [icon]: <> (fa-hand-fist)
 [exit]: <> (exit)
 

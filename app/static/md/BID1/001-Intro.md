@@ -1,5 +1,5 @@
-[nombre]: <> (Bidean 2)
-[sidebar]: <> (Bidean 2)
+[nombre]: <> (Bidean 1)
+[sidebar]: <> (Bidean 1)
 [icon]: <> (fa-hand-fist)
 [exit]: <> (exit)
 
