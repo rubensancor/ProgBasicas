@@ -5,6 +5,6 @@
 
 - Los monitores llevan en las actividades especiales la pañoleta
 
-- Tener colocada la oración Pottoki en el local.
+- Tener colocada una canción del Libro de la Selva en el local.
 
-- Todos los sábados a una oración breve.
+- Todos los sábados una oración breve y dinámica.
