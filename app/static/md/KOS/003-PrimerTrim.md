@@ -5,9 +5,7 @@
 
 - Hacer lista de asistencia de chavales/as y pasarla todo los días después de la actividad. Si alguno/a falta varios días y no han avisado, llamar a los padres/madres.
 
-- Todos los sábados deben continuar haciendo la oración Pottoki.
-
-- Primera reunión: es el siguiente sábado al paso, en el que comienza la aventura. Se les organiza en seisenas.
+- Primera reunión: es el siguiente sábado al paso, en el que comienza la aventura. Se les organiza en seisenas, asistencia de chavales. 
 
 - Aventura del trimestre: Libre
 
