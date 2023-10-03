@@ -3,17 +3,18 @@
 [icon]: <> (fa-cross)
 [exit]: <> (exit)
 
-- **Localización:** Zarate
-- Centrado en el momento litúrgico Cuaresma-Semana Santa.
+- Centrado en el momento litúrgico Cuaresma-Semana Santa. Realizar un hilo conductor en las oraciones.
 
-- Enseñar las tres máximas scout, y hacer un taller relacionado. En "seguir a Jesús" referencia a la vida religiosa.
+- Enseñar las tres máximas scout, y hacer un taller relacionado. Taller de las maderas. En las oraciones, hacer referencia a la máxima “Jesús es nuestro amigo”.
 
-- Primer día de equipos: Reunión para explicarles qué es / Ir a verles / Reunión de revisión del día de equipos y trimestre (panfleto)/ No puede faltar una pregunta sobre la línea de fe.
+- Presentar los cargos y repartirlos entre los chavales y chavalas.
 
-- Oración especial. (ver Anexo Eucaristías).
+- Realizar la actividad del OIN EXPRESS. Una actividad por parejas basada en el programa del Pekin Express. (Esta bien explicado en la intranet/teams).
 
-- Misa: Dinámica de clavos (perdón) y velas (tras las lecturas).
+- Oración especial.
 
-- Actividad de "Garbandolares". Está en intranet.
+- Misa: Consultar documento de celebraciones.
+
+- Actividad de "Garbandólares". Está en intranet/teams.
 
 - Revisión del trimestre.

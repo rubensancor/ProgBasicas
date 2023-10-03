@@ -3,28 +3,24 @@
 [icon]: <> (fa-2)
 [exit]: <> (exit)
 
-- Primera semana: revisar equipos, y de nuevo proceso de elección del proyecto: Los monitores presentan de forma motivadora tres "proyectos candidatos" entre los que hay que elegir (ejemplos de otros años en carpeta de grupos, Valnerarte y ointube,...). Deben cumplir estos requisitos: Dar posibilidades de actividades variadas y dinámicas / Tener gancho / Contenido educativo / Tener un resultado final
+- Primera semana: revisar equipos, y de nuevo proceso de elección del proyecto: Los y las monis presentan de forma motivadora tres "proyectos candidatos" entre los que hay que elegir . Deben cumplir estos requisitos: Dar posibilidades de actividades variadas y dinámicas / Tener gancho / Contenido educativo / Tener un resultado final
 
-- Oraciones relacionadas con el rastrillo, semana de la paz, etc.
+- Oraciones relacionadas con el Rastrillo, semana de la paz, etc.
 
-- Salida: los Valnera al monte Eretza y los Eretza a las cuevas de Balzola (cuidar motivación entresemana). Mirar en la intranet.
+- Salida: los Valnera al monte Eretza y los Eretza a las cuevas de Balzola (cuidar motivación entre semana).
 
-- Completo.
-
-- Semana de la paz: actividad de concienciación. (Por ej. juego de DDHH de la oficina, canciones sobre la paz, fotos por la paz, Actividad web Itaka-Escolapios....).
-
-- Globada
+- Semana de la Paz: actividad de concienciación. (Por ej. juego de DDHH de la oficina, canciones sobre la paz, fotos por la paz, Actividad web Itaka-Escolapios....). La actividad del sábado es participar en la Marcha por la Paz.
 
 - Rastrillo: encartelar y actividad para motivar el proyecto concreto de cada año (Por ej. "juego de mesa", tablero en la oficina y preguntas según el proyecto del Rastrillo).
 
-- Ortzadar Eguna (Motivarlo y trabajarlo semanas anteriores, científicos escolapios) (Hoja de organización del Ortzadar eguna). En la intranet.
+- Ortzadar Eguna (Motivarlo y trabajarlo semanas anteriores, científicos escolapios). Cuenta como el completo de este trimestre.
 
-- Revisión de los miembros del grupo en el E.R.
+- Revisión de chavales en la rama si la situación lo requiere (Rama ALPHA).
 
-- Posible ER conjunto con otras ramas cercanas sobre temas de interés común.
+- Posibles formaciones conjuntas con otros E.R.s cercanas sobre temas de interés común.
 
-- Insistir en comenzar la reunión con la dinámica de la oración scout.
+- Insistir en comenzar o terminar las actividades de sábado con la dinámica de la oración scout.
 
 - Interesarse por las convivencias, animar, procurar que vayan monitores del curso a ellas.
 
-- Recordar lo vivido en las convivencias  en la siguiente reunión de grupo (comentario, oración...)
+- Recordar lo vivido en las convivencias  en la siguiente reunión de grupo (comentario, oración...).

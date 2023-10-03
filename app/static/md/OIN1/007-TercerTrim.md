@@ -5,20 +5,18 @@
 
 - Primera semana: revisar equipos, y de nuevo proceso de elección del proyecto (como en el segundo trimestre, conocer Bilbao,...).
 
-- Oraciones
+- Seguir empezando o terminando las actividades de sábado con la oración Scout.
 
-- Semana Vocacional: juego biografía sacerdotes "juego trivial".
+- Semana Vocacional: Actividad relacionada con la Vocación. Consultar intranet/teams para opciones.
 
 - Completo
 
-- Gorka Deuna (si se puede, interesante hacer otra salida).
-
-- Juego de ciudad.
+- Gorka Deuna (si se puede, sería interesante hacer otra salida y completo, a valorar por el equipo).
 
 - Introducirles su primer campamento volante (posible motivar haciendo técnicas eskaut).
 
-- Reunión de aitas (finales de mayo): Revisión año (enseñar fotos) / Campamento de  verano
+- Reunión de familias (finales de mayo): Revisión año (enseñar fotos) / Explicar campamento de  verano
 
-- Salida a San Juan de Gaztelugatxe cuando han acabado las clases y recuperaciones.
+- Salida a la playa , habiendo realizado una ruta previa.
 
-- Si el campamento volante debe comenzar nada más llegar a Trueba, en la fiesta final se puede elaborar una gynkana que presente los talleres del campamento volante. Incluso pueden llevar de casa elaborada la mochila para el volante.
+- Si el campamento volante debe comenzar nada más llegar a Trueba, en la fiesta final se puede elaborar una gymkhana que presente los talleres del campamento volante. Incluso pueden llevar de casa elaborada la mochila para el volante.

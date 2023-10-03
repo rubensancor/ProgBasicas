@@ -9,12 +9,10 @@
 
 - Cuidar el euskera en las actividades, oraciones...
 
-- Carta de compromiso (si se ve necesario).
-
-- Realizar actividades que destaquen personas o  valores cristianos.
+- Realizar actividades que destaquen personas o  valores cristianos.
 
 - El Proyecto como metodología (actividad trimestral elegida por ellos y centrada en el grupo).
 
-- Aprovechar las salidas y completos para realizar oraciones más cuidadas.
+- Grupo de Whatsapp con los chavales. Es otro voto de confianza para los chavales. Se utilizara para comunicarnos con los chavales directamente, pero esto no implica que se termine con la comunicación con las familias. 
 
-- Si es posible tener dos salidas al trimestre.
+- Aprovechar las salidas y completos para realizar oraciones más cuidadas.

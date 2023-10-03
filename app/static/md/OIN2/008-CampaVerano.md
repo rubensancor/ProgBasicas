@@ -3,36 +3,32 @@
 [icon]: <> (fa-mountain-sun)
 [exit]: <> (exit)
 
-- **Localización:** Trueba
+- **Localización:** Estacas de Trueba
 
-- Salida 1º día.
+- Salida 1º día a la Poza Grande.
 
-- Campamento volante (Castro Valnera): Se les da panfleto del campamento (canciones, oraciones,...) / Dura 5 días (principio del campamento) / A las mañanas al comenzar la marcha, hacer una oración/ Al partir de Trueba promesa ante la cruz y al regresar ofrenda. Misa durante el volante en Lunada.
+- Campamento volante (Castro Valnera): Se les da panfleto del campamento (canciones, oraciones,...) / Dura 5 días (principio del campamento) y 4 noches / A las mañanas al comenzar la marcha, hacer una oración cantando “La Virgen del Scout”/ Al partir de Trueba promesa ante la cruz y al regresar ofrenda. Celebración de la Palabra durante el volante en Lunada.
 
-- Los grupos salen de campamento volante con el intervalo de un día.
+- Los grupos salen de campamento volante con un intervalo de un día.
 
-- Noche Oinarinak durante el volante.
+- Noche de Equipos durante el volante.
 
-- Reunión de escultismo: Dinámica en la que a cada miembro del grupo se le dice entre todos/as cosas positivas y cosas a mejorar. Depende del grupo varia la actividad. Empezar en el volante.
+- Reunión de escultismo: Dinámica en la que a cada miembro del grupo se le dice entre todos/as cosas positivas y cosas a mejorar. Dinámica de la cosa buena cosa mala.
 
-- Los Oin II preparan un cluedo a los Kas II: Los Valnera a Cotero y los Eretza a los Kolitza.
+- Los Oin II preparan una velada a las Kas II: Los Valnera a Cotero y los Eretza a los Kolitza. Se suele realizar un cluedo por la casa, para que sea diferente a la velada realizada en OIN I.
 
-- Promesa scout:
+- Promesa scout: Se habla con cada uno de ellos individualmente en la propia campa. No más de 10 minutos. Breve diálogo animándole a marcarse retos en los cinco pilares. Luego esto se concretará en la Eucaristía.
 
-    - Se habla con cada uno de ellos individualmente en la propia campa. No más de 10 minutos. Breve diálogo animándole a marcarse retos en los cinco pilares.
+    - Misa + promesa (se les entregara el pasapañoletas y las leyes).
 
-    - Misa + promesa (unas líneas de un escolapio en el cuaderno) + fiesta (se les entrega el pasa-pañoletas y las leyes).
+    - Cada grupo tiene su misa (Eretza y Valnera).
 
-    - Cada grupo tiene su misa.
-
-    - Cuidar la simbología en la ceremonia.
+    - Cuidar la simbología en la ceremonia: pañoleta, preparación de las partes de la Misa y ensayo del ritual de la promesa.
 
     -  Darle a la promesa un carácter de oración personal: pregunta directa a Dios sobre lo que quiere que yo haga, petición de fuerzas para realizarlo, presentación de sueños de futuro, etc. ¿Qué quiere Dios de mí?
 
-    - Buscar los momentos de silencio dentro del campamento.
+ - Reparto de pasapañoleta y marcapáginas con las Leyes Scout.
 
-    - Reparto de pasa pañoleta.
-
-- Talleres (ver sección Talleres).
+- Realizar algun taller (ver sección Talleres).
 
 - Oraciones contemplativas, aprovechando estrellas, hoguera, etc.
