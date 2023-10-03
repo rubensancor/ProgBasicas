@@ -9,18 +9,12 @@
 
 - Elección del proyecto: Los monitores presentan de forma motivadora tres "proyectos candidatos" entre los que hay que elegir (ejemplos de otros años en carpetas: fotografía, circo, musical, obra de teatro, kulturama, conocer Bilbao, bricomanía-arreglar el local, técnicas scout,...). Deben cumplir estos requisitos: Dar posibilidades de actividades variadas y dinámicas / Tener gancho / Contenido educativo / Tener un resultado final / No ser repetitivos con los hechos el año anterior.
 
-- Reunión de familias (mediados de octubre, a poder ser coincidiendo con la reunión de clase). Darles la hoja con fechas.
+- Reunión de familias (a comienzo del curso, a poder ser coincidiendo con la reunión de clase) para presentar la etapa y la planificación del trimestre. Dar/enviar la hoja de fechas.
 
-- Varias oraciones a lo largo del trimestre, preparadas por los monitores. Oración también por san José de Calasanz, sin olvidar la oración scout, que se hará todos los sábados. Cada trimestre se preparará una oración más especial.
+- Oraciones semanalmente los sábados, preparadas por los monitores. Oración también por san José de Calasanz, sin olvidar la oración scout, que se hará todos los sábados. Cada trimestre se preparará una oración más especial.
 
-- Semana de Calasanz: Oración Calasanz, encartelar y actividad adaptada al proyecto o juego "atrapa una vocación" (Anexo).
+- Salida al Leungane los Valnera y a los montes Upo y Artanga los Eretza.
 
-- Campaña de Navidad: oración especial, hablar del proyecto de ese año... Por esas fechas se realiza también el Olentzero para "Interbiak". El Olentzero de Itaka-Escolapios lo elabora herri aukera de todas las etapas.
+- Semana de Calasanz: Oración Calasanz, actividad relacionada con Calasanz.
 
-- Campaña Navidad: buzonea Oin II.
-
-- Olentzero: ensayar canciones en el propio local para cantar el 24.
-
-- Salida al Ganekogorta los Eretza y a Leungane los Valnera.
-
-- Hacer un completo con eucaristía al trimestre.
+- Campaña de Navidad: oración especial, hablar del proyecto de ese año...

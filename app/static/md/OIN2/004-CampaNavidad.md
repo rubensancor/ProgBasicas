@@ -3,21 +3,16 @@
 [icon]: <> (fa-snowflake)
 [exit]: <> (exit)
 
-- **Localización:**  Toki Alai
-- Cuidar el momento litúrgico de Adviento-Navidad.
+- Cuidar el momento litúrgico de Adviento-Navidad. Realizar un hilo conductor para las oraciones.
 
-- Salida el 1º día.
+- Salida el 1º día. Cuidar que sea una salida temática.
 
-- Día de equipos / día de equipos y trimestre (panfleto)/ Revisión personal, fe, grupo...
+- Revisión del trimestre.
 
-- Reunión: qué es ser scout mediante un juego de rol (Anexo).  
+- Actividad especial durante el campamento para reforzar el grupo. Por ejemplo: "Twitter", "Instagram", “TikTOINk”.
 
-- Dinámica: frases con el nombre de un miembro del grupo y cuidar durante ese campamento a la persona que has elegido. (Anexo: reunión inicial)
+- Realizar algun taller (ver sección Talleres).
 
-- Actividad especial durante el campamento para reforzar el grupo. Por ejemplo: "Twitter", "Instragram".
-
-- Taller (ver sección Talleres).
-
-- Misa: celebración navidad. ("Preparamos la Navidad") (Anexo Eucaristías).
+- Misa: celebración navidad. ("Preparamos la Navidad") (Mirar documento celebraciones).
 
 - Gran Boom: Olentzero.
